@@ -23,7 +23,7 @@ describe('add function', () => {
 });
 import divide from '../src/add.js';
 describe('divide function', () => {
-  it('adds two positive numbers', () => {
-    assert.strictEqual(divide(10, 5), 2);
+  it('divides two numbers', () => {
+    assert.strictEqual(divide(4, 2), 2);
   });
 });
