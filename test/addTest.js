@@ -6,7 +6,7 @@ import assert from 'assert';
 
 
 
-import add from '../src/add.js'
+import add from '/src/add.js'
 describe('add function', () => {
   it('adds two positive numbers', () => {
     assert.strictEqual(add(6, 4), 10);
