@@ -8,7 +8,8 @@
     "test": "mocha --recursive",
     "test2": "nyc mocha && nyc report --reporter=text-lcov | coveralls",
     "test3": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "coveralls": "coveralls < coverage/lcov.info"
   },
   "jest": {
     "coverageReporters": ["text", "lcov"]
