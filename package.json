@@ -6,7 +6,12 @@
   "type": "module",
   "scripts": {
     "test": "mocha --recursive",
-    "test2": "nyc mocha && nyc report --reporter=text-lcov | coveralls"
+    "test2": "nyc mocha && nyc report --reporter=text-lcov | coveralls",
+    "test3": "jest",
+    "coverage": "jest --coverage"
+  },
+  "jest": {
+    "coverageReporters": ["text", "lcov"]
   },
   "author": "",
   "license": "MIT",
