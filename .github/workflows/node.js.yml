@@ -26,9 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm' 
-    - name: Coveralls GitHub Action
-      uses: coverallsapp/github-action@v2.3.6 
-
+    
     - run: npm ci
     - run: npm install mocha
     - run: npm install chai
@@ -39,4 +37,3 @@ jobs:
       uses: coverallsapp/github-action@v2
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        parallel: true 
