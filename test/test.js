@@ -1,20 +1,23 @@
-import add from '/src/add.js';
+import assert from 'assert';
 
+
+
+import add from '../src/add.js';
 describe('add function', () => {
-  test('adds two positive numbers', () => {
-    expect(add(6, 4)).toBe(10);
+  it('adds two positive numbers', () => {
+    assert.strictEqual(add(6, 4), 10);
   });
 
-  test('adds a positive and a negative number', () => {
-    expect(add(6, -2)).toBe(4);
+  it('adds a positive and a negative number', () => {
+    assert.strictEqual(add(6, -2), 4);
   });
 
-  test('adds two negative numbers', () => {
-    expect(add(-3, -7)).toBe(-10);
+  it('adds two negative numbers', () => {
+    assert.strictEqual(add(-3, -7), -10);
   });
 
-  test('adds zero correctly', () => {
-    expect(add(0, 5)).toBe(5);
-    expect(add(0, 0)).toBe(0);
+  it('adds zero correctly', () => {
+    assert.strictEqual(add(0, 5), 5);
+    assert.strictEqual(add(0, 0), 0);
   });
 });
