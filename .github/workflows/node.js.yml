@@ -33,6 +33,10 @@ jobs:
     - run: npm install chai
     - run: npm run build --if-present
     - run: npm test
+    - name: npm install, make test-coverage
+      run: |
+        npm install
+        make test-coverage
 
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v2.3.6
