@@ -31,6 +31,7 @@ jobs:
     - run: npm install mocha
     - run: npm install chai
     - run: npm install nyc
+    - run: install coveralls
     - run: npm run build --if-present
     - run: npm test 
 
