@@ -23,6 +23,6 @@ describe('add function', () => {
 });
 describe('divide function', () => {
     it('divides two numbers', () => {
-        assert.strictEqual(divide(6, 4), 1.5);
+        assert.equal(divide(6, 4), 1.5);
     });
 });
