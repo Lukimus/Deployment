@@ -32,10 +32,7 @@ jobs:
     - run: npm install mocha
     - run: npm install chai
     - run: npm run build --if-present
-    - run: npm test
-
-    name: Build
-    steps:
+    - run: npm test 
 
     - uses: actions/checkout@v6
 
@@ -45,8 +42,7 @@ jobs:
         node-version: lts/*
 
     - name: npm install, make test-coverage
-      run: |
-        npm install
+      run: | 
         make test-coverage
 
     - name: Coveralls
