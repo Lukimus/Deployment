@@ -1,0 +1,21 @@
+{
+  "name": "software-testing-assignment",
+  "version": "1.0.0",
+  "description": "This is a project template for students participating in Software Testing course at LAB University of Applied Sciences.",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5",
+    "node": "^25.8.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
+}
