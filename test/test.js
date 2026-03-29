@@ -24,4 +24,8 @@ describe('add function', () => {
     assert.strictEqual(divide(4, 2), 2);
   });
 });
-
+describe('divide function', () => {
+    it('divides two numbers', () => {
+        assert.strictEqual(divide(6, 4), 1.5);
+    });
+});
