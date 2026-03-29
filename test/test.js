@@ -20,9 +20,6 @@ describe('add function', () => {
     assert.strictEqual(add(0, 5), 5);
     assert.strictEqual(add(0, 0), 0);
   });
-  it('divides two numbers', () => {
-    assert.strictEqual(divide(4, 2), 2);
-  });
 });
 describe('divide function', () => {
     it('divides two numbers', () => {
