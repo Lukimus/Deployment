@@ -1,6 +1,6 @@
 
 /*  const { expect } = import('chai');
-const { default: add } = import( {add} ,'../src/add.js');*/
+const { default: add } = import( {add} ,'../src/add.js'); sdds*/
 
 import {expect} from 'chai'
 
