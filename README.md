@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/Lukimus/Deployment/badge.svg?branch=main)](https://coveralls.io/github/Lukimus/Deployment?branch=main)
+
 # Student template
 
 ## Purpose of this repository

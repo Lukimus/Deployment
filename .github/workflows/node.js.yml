@@ -25,16 +25,15 @@ jobs:
       uses: actions/setup-node@v6
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: Coveralls
-      uses: coverallsapp/github-action@v2
+        cache: 'npm' 
     
     - run: npm ci
     - run: npm install mocha
     - run: npm install chai
     - run: npm run build --if-present
     - run: npm test 
-    - run: make test-coverage
-    
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@v2
     
 
