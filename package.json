@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "This is a project template for students participating in Software Testing course at LAB University of Applied Sciences.",
   "main": "index.js",
-
+  "type": "module",
   "scripts": {
-    "test": "mocha --recursive"
+    "test": "mocha test/ --recursive"
   },
   "author": "",
   "license": "MIT",
