@@ -21,3 +21,9 @@ describe('add function', () => {
     assert.strictEqual(add(0, 0), 0);
   });
 });
+import divide from '../src/add.js';
+describe('divide function', () => {
+  it('adds two positive numbers', () => {
+    assert.strictEqual(divide(10, 5), 2);
+  });
+});
