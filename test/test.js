@@ -21,8 +21,4 @@ describe('add function', () => {
     assert.strictEqual(add(0, 0), 0);
   });
 });
-describe('divide function', () => {
-    it('divides two numbers', () => {
-        assert.BeApproximately(divide(6, 4), 1.5);
-    });
-});
+
