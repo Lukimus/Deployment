@@ -9,11 +9,10 @@
     "coverage": "nyc --reporter=lcov --reporter=text mocha",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
-  "jest": {
-    "coverageReporters": [
-      "text",
-      "lcov"
-    ]
+  "nyc": {
+    "all": true,
+    "include": ["src/**/*.js"], 
+    "reporter": ["lcov", "text"]
   },
   "author": "",
   "license": "MIT",
