@@ -1,7 +1,7 @@
 import assert from 'assert';
 
 
-
+import divide from '../src/add.js';
 import add from '../src/add.js';
 describe('add function', () => {
   it('adds two positive numbers', () => {
@@ -20,10 +20,8 @@ describe('add function', () => {
     assert.strictEqual(add(0, 5), 5);
     assert.strictEqual(add(0, 0), 0);
   });
-});
-import divide from '../src/add.js';
-describe('divide function', () => {
   it('divides two numbers', () => {
     assert.strictEqual(divide(4, 2), 2);
   });
 });
+
